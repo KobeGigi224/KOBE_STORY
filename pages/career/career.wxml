@@ -1,0 +1,55 @@
+<!--pages/career/career.wxml-->
+
+<view>
+<van-row type="flex" justify="center" >
+<van-col span="8"><picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+<view class="picker">
+<van-button color="#FFFF00" cilck="showPopup" type="primary" block><view style="color:#7232DD;font-weight:bold">按日期查询</view></van-button>
+</view>
+</picker>
+</van-col>
+<van-col span="8"><picker mode="selector" bindchange="bindSeasonPickerChange" bindcolumnchange="bindTeamPickerColumnChange" value="{{multiIndexSeason}}" range="{{multiArraySeason}}">
+<view class="picker">
+<van-button color="#000000" cilck="showPopup" type="primary" block><view style="color:#FFFFFF;font-weight:bold">按赛季查询</view></van-button>
+</view>
+</picker>
+</van-col>
+<van-col span="8"><picker mode="selector" bindchange="bindTeamPickerChange" bindcolumnchange="bindTeamPickerColumnChange" value="{{multiIndexTeam}}" range="{{multiArrayTeam}}">
+<view class="picker">
+<van-button color="#7232DD" cilck="showPopup" type="primary" block><view style="color:#FFFF00;font-weight:bold">按球队查询</view></van-button>
+</view>
+</picker>
+</van-col>
+</van-row>
+</view>
+
+
+<van-divider contentPosition="center">{{mes}}</van-divider>
+
+<view class='title'>
+<text>{{total}}</text>
+</view>
+
+<view wx:for="{{career}}" bindtap='gocareerdetail' data-cid='{{item._id}}' style="margin-bottom:10px">
+
+<van-button color="#ffff00" block>
+<van-row justify="center" >
+  <van-col span="8"><view style="color:#000000">{{item.homeandaway}}</view></van-col>
+  <van-col span="8"><view style="color:#000000">{{item.date}}</view></van-col>
+  <van-col span="8"><view style="color:#000000">{{item.result}}</view></van-col>
+</van-row>
+</van-button>
+
+<van-button cilck="gocareerdetail()" color="#7232dd" block >
+<van-row justify="center" >
+  <van-col span="8">{{item.opponent}}</van-col>
+  <van-col span="8">{{item.scoreresult}}</van-col>
+  <van-col span="8" wx:if="{{item.gametype=='0'}}">湖人</van-col>
+  <van-col span="8" wx:if="{{item.gametype=='1'}}">湖人</van-col>
+  <van-col span="8" wx:if="{{item.gametype=='2'}}">西部全明星</van-col>
+  <van-col span="8" wx:if="{{item.gametype=='3'}}">美国</van-col>
+</van-row>
+</van-button>
+
+</view>
+

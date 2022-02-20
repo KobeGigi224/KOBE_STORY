@@ -1,0 +1,32 @@
+<!--pages/careerdetail/careerdetail.wxml-->
+<van-button color="#7232DD" bindtap="gotocommentgame" type="primary" block><view style="color:#FFFF00;font-weight:bold">球迷点评</view></van-button>
+
+
+<van-grid column-num="1">
+  <van-grid-item text="个人详细数据" />
+</van-grid>
+<view class="container" style="margin-top: 100rpx;" >
+  <ec-canvas id="mychart" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+
+
+<view class="container" style="margin-top: 800rpx;">
+  <ec-canvas id="mychart1" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+
+<view class="container" style="margin-top: 1500rpx;">
+  <ec-canvas id="mychart2" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+
+<view class="container" style="margin-top: 2200rpx;">
+  <ec-canvas id="mychart3" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+
+<view class="container" style="margin-top: 2900rpx;">
+  <ec-canvas id="mychart4" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+
+<view class="container" style="margin-top: 3600rpx;">
+  <ec-canvas id="mychart5" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+

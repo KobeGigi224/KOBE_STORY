@@ -1,0 +1,25 @@
+<!--index.wxml-->
+
+<view class='imagesize'>
+   <image mode='widthFix'  src='cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/kobechina.jpg' />
+</view>
+
+<view class="container">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<view class="bottom">
+<view>
+<van-notice-bar
+  scrollable
+  color="#7232DD"
+  background="#ecf9ff"
+  left-icon="fire"
+  text="科比第一次来到中国，之前他以为自己不可能在中国有自己粉丝，但当他见到众多的球迷对自己的喜爱且都是发自内心对篮球运动的热爱时，他改变了看法"
+/>
+</view>
+<view class='imagesize'>
+<image mode='widthFix'  src='cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/kobechina1.jpg' />
+</view>
+</view>
+

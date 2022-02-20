@@ -1,0 +1,10 @@
+<!--pages/photodetail/photodetail.wxml-->
+<van-divider contentPosition="center">我上传的图片</van-divider>
+<view wx:for="{{photo}}" class="queryphoto" data-cid='{{item._id}}' data-oid='{{item._openid}}'>
+  <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" async-close bind:close="onClose">
+    <van-cell-group>
+      <van-card  title="{{item.phototype}}-{{item.photodesc}}" thumb="{{item.image}}" />
+    </van-cell-group>
+    <view slot="right" bindtap='deletephoto' data-cid='{{item._id}}' data-oid='{{item._openid}}' data-image="{{item.image}}">删除</view>
+  </van-swipe-cell>
+</view>

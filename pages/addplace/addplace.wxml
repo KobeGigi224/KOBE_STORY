@@ -1,0 +1,58 @@
+<view class="page-body">
+  <view class="page-section">
+  <view class="weui-cells__title">昵称</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyName" placeholder="输入同步到view中" disabled="true" value="{{nikename}}"/>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+  <view class="weui-cells__title">圣地名</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyplaceName" placeholder="请填写圣地名"/>
+      </view>
+    </view>
+  </view>
+<view class="page-section">
+  <view class="weui-cells__title">选择省市</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+    <view class="picker weui-input">
+      {{multiArray[0][multiIndex[0]]}}—{{multiArray[1][multiIndex[1]]}}
+    </view>
+    </view>
+    </view>
+  </picker>
+</view>
+
+<view class="page">
+<view class="weui-cells__title">圣地图片上传</view>
+    <view class="page__bd">
+        <mp-cells>
+            <mp-cell>
+                <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" binddelete="uploaddelete" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="1" title="请选择最具标志性的图片"></mp-uploader>
+            </mp-cell>
+        </mp-cells>
+        <view class="hidefileid">
+          <input class="weui-input" disabled="true"   bindinput="bindfileid" placeholder="输入同步到view中" value="{{imageurltocloud}}"/>
+        </view>
+    </view>
+
+    <view class="page-section" >
+    <view class="weui-cells__title">地址</view>
+          <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+      <textarea style="height: 5em" class="weui-input" maxlength="-1"  bindinput="bindKeyPlace" placeholder="请填写该圣地的详细地址" />
+      </view>
+</view>
+  </view>
+</view>
+</view>
+  <div style="margin: 16px;">
+    <van-button round block type="info" native-type="submit" bindtap="placecomfirm" >
+      提交
+    </van-button>
+  </div>

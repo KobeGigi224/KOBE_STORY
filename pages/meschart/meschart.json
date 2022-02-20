@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "留言排行榜",
+    "usingComponents": {
+      "ec-canvas": "../../ec-canvas/ec-canvas"
+    }
+}

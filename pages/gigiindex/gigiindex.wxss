@@ -1,0 +1,68 @@
+/* pages/gigiindex/gigiindex.wxss */
+
+
+
+.city_history{
+  margin-top:12px;
+  padding-top:5px;
+
+}
+
+.history_content{
+  clear:both;
+  overflow: hidden;
+  width:100%;
+}
+.history_content .left,.history_content .right{
+  width:49%;
+}
+
+.history_content .left{
+  float:left;
+}
+.history_content .right{
+  float:right;
+}
+.history_item{
+  display: inline-block;
+  background:#fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width:100%;
+}
+.item-img{
+  width:100%;
+  border-radius: 10px 10px 0 0 ;
+}
+.item-title{
+  margin-top: -8px;
+  margin-left: 2px;
+  margin-right: -2px;
+  padding:10px;
+  font-weight:bold;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei';
+  color: #1e1e1e;
+}
+.item-ava{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  float:left;
+  margin-right:10px;
+}
+.history_auth_name{
+  padding:0 0 10px 10px;
+}
+
+.container{
+  position: absolute;
+  top: -80px;
+  width: 100%;
+  height:700rpx;
+  }
+  ec-canvas {
+    width: 100%;
+    height:700rpx;
+  }
+  

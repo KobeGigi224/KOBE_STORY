@@ -1,0 +1,51 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/placechart/placechart",
+    "pages/meschart/meschart",
+    "pages/addmes/addmes",
+    "pages/addplace/addplace",
+    "pages/addphoto/addphoto",
+    "pages/addadvice/addadvice",
+    "pages/map/map",
+    "pages/commentgame/commentgame",
+    "pages/mapdetail/mapdetail",
+    "pages/career/career",
+    "pages/careerdetail/careerdetail" ,
+    "pages/gigiindex/gigiindex",
+    "pages/mesdetail/mesdetail",
+    "pages/placedetail/placedetail",
+    "pages/photodetail/photodetail",
+    "pages/usercenter/usercenter"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Kobe",
+        "iconPath": "/images/kobe.png",
+        "selectedIconPath": "/images/kobe.png"
+      }, 
+      {
+        "pagePath":  "pages/gigiindex/gigiindex",
+        "text": "Gigi",
+        "iconPath": "/images/kobe.png",
+        "selectedIconPath":"/images/kobe.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+      "kbone": true,
+      "weui": true
+    }
+  
+}

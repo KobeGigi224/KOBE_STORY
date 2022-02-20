@@ -1,0 +1,37 @@
+<!--pages/addmes/addmes.wxml-->
+<view class="page-body">
+  <view class="page-section">
+    <view class="weui-cells__title">昵称</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" maxlength="10" bindinput="bindKeyName" placeholder="输入同步到view中" disabled="true" value="{{nikename}}" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">选择省市</view>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="picker weui-input">
+            {{multiArray[0][multiIndex[0]]}}—{{multiArray[1][multiIndex[1]]}}
+          </view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">留言</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <textarea style="height: 10em" class="weui-input" maxlength="-1" bindinput="bindKeyComment" placeholder="请写下你想对老大说的话或者你跟老大的故事" />
+      </view>
+    </view>
+  </view>
+</view>
+
+<div style="margin: 16px;">
+  <van-button round block type="info" native-type="submit" bindtap="commentcomfirm">
+    提交
+  </van-button>
+</div>

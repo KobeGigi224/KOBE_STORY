@@ -1,0 +1,25 @@
+/* pages/commentgame/commentgame.wxss */
+.view-liuyan {
+    margin: 25rpx;
+  
+    border-style: solid;
+    border-width: 2rpx;
+    border-color: #ccc;
+  }
+  
+  textarea {
+    cursor: auto;
+    /* 主要就是重写它 */
+    width: 700rpx;  
+    height: 250rpx;
+    display: block;
+    position: relative;
+  }
+  
+  /* 显示输入字符 */
+  .currentWordNumber {
+    position: absolute;
+    bottom: 40rpx;
+    right: 26rpx;
+    color: #888;
+  }

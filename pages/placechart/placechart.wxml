@@ -1,0 +1,4 @@
+
+<view class="container">
+  <ec-canvas id="mychart" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit" bindtouchstart="{{ec.disableTouch ? '':'touchStart'}}" bindtouchmove="{{ec.disableTouch ? '':'touchMove'}}" bindtouchend="{{ec.disableTouch ? '':'touchEnd'}}" force-use-old-canvas="true"></ec-canvas>
+</view>

@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "圣地",
+
+  "usingComponents": {
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-field": "../../miniprogram_npm/vant-weapp/field/index",
+    "van-popup": "../../miniprogram_npm/vant-weapp/popup/index",
+    "van-col": "../../miniprogram_npm/vant-weapp/col/index",
+    "van-row": "../../miniprogram_npm/vant-weapp/row/index",
+    "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+    "van-area": "../../miniprogram_npm/vant-weapp/area/index",
+    "mp-uploader": "../../weui-miniprogram/uploader/uploader",
+    "mp-cells": "../../weui-miniprogram/cells/cells",
+    "mp-cell": "../../weui-miniprogram/cell/cell"
+  }
+}

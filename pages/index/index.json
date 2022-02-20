@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "科比",
+    "usingComponents": {
+      "van-notice-bar": "../../miniprogram_npm/vant-weapp/notice-bar/index",
+          "van-col": "../../miniprogram_npm/vant-weapp/col/index",
+          "van-row": "../../miniprogram_npm/vant-weapp/row/index",
+          "van-card": "../../miniprogram_npm/vant-weapp/card/index",
+          "van-grid": "../../miniprogram_npm/vant-weapp/grid/index",
+          "van-grid-item": "../../miniprogram_npm/vant-weapp/grid-item/index",
+          "van-tabbar": "../../miniprogram_npm/vant-weapp/tabbar/index",
+          "van-tabbar-item": "../../miniprogram_npm/vant-weapp/tabbar-item/index",
+          "van-divider": "../../miniprogram_npm/vant-weapp/divider/index",
+          "van-dialog": "../../miniprogram_npm/vant-weapp/dialog/index",
+          "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+          "van-popup": "../../miniprogram_npm/vant-weapp/popup/index",
+          "van-button": "../../miniprogram_npm/vant-weapp/button/index"
+    }
+}

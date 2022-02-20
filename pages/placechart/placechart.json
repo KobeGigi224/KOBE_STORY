@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "圣地排行榜",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

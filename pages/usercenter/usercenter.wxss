@@ -1,0 +1,75 @@
+/* pages/usercenter/usercenter.wxss */
+.wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.profile {
+  height: 375rpx;
+  background-color: glay;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+    .avatar {
+      display: block;
+      width: 140rpx;
+      height: 140rpx;
+      border-radius: 50%;
+      border: 2rpx solid #fff;
+      overflow: hidden;
+    }
+
+    .nickname {
+      display: block;
+      text-align: center;
+      margin-top: 20rpx;
+      font-size: 30rpx;
+      color: #000;
+    }
+  
+
+
+.count {
+  display: flex;
+  margin: 0 20rpx;
+  height: 100rpx;
+  text-align: center;
+  border-radius: 4rpx;
+  background-color: #fff;
+
+  position: relative;
+  top: -27rpx;
+}
+  .cell {
+    flex: 1;
+    padding-top: 16rpx;
+    font-size: 27rpx;
+    color: #333;
+  }
+
+  text {
+    display: block;
+    font-size: 24rpx;
+  }
+
+
+.orders {
+  margin: -17rpx 20rpx 0 20rpx;
+  padding: 20rpx 0;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+
+  .title {
+    padding-left: 20rpx;
+    font-size: 30rpx;
+    color: #333;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid #eee;
+  }

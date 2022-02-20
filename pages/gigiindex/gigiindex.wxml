@@ -1,0 +1,48 @@
+<!--pages/gigiindex/gigiindex.wxml-->
+
+<view class="container" >
+  <ec-canvas id="mychart" canvas-id="mychart-area" ec="{{ ec }}" bind:init="echartInit"  force-use-old-canvas="true"></ec-canvas>
+</view>
+
+<view style="margin-top: 750rpx;">
+<van-tabs v-model="activeName" bind:click="onClick" bind:change="onChange" sticky scrollspy swipeable v-if="show">
+  <van-tab title="比赛" name="a"></van-tab>
+  <van-tab title="家庭" name="b"></van-tab>
+  <van-tab title="合影" name="c"></van-tab>
+  <van-tab title="活动" name="d"></van-tab>
+  <van-tab title="球迷" name="e"></van-tab>
+  <van-tab title="壁纸" name="f"></van-tab>
+</van-tabs>
+</view>
+
+
+<view style="display:none">
+  <image wx:for="{{trips}}" wx:key="id" id="{{item._id}}" src="{{item.image}}" bindload="onImageLoad"></image>
+</view>
+<view class="city_history">
+  <view class="history_content">
+    <scroll-view scroll-y="true" style="height: {{ windowHeight }}px; " bindscrolltolower="loadImages">
+      <view class="left">
+        <view wx:for="{{col1}}" wx:key="id">
+          <view class="history_item">
+            <image class="item-img" lazy-load="true" src="{{item.image}}" data-src='{{item.image}}' mode="widthFix" bindtap="big"></image>
+            <view class="item-title-box">
+              <view url="url" class="item-title">{{item.photodesc}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="right">
+        <view wx:for="{{col2}}" wx:key="id">
+          <view class="history_item" >
+            <image class="item-img" lazy-load="true" src="{{item.image}}" data-src='{{item.image}}' mode="widthFix" bindtap="big"></image>
+            <view class="item-title-box">
+              <view url="url" class="item-title">{{item.photodesc}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+

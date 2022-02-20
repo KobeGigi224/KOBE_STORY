@@ -1,0 +1,9 @@
+<!--pages/commentgame/commentgame.wxml-->
+<view data-id="liuyan">
+  <form bindsubmit="bindFormSubmit">
+    <textarea class="view-liuyan" minlength="4" maxlength="224" name="textarea" disabled="true" placeholder="目前开发中。。" bindinput="bindInputText">
+      <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+    </textarea>
+    <button class="send" form-type="submit">提交留言</button>
+  </form>
+</view>

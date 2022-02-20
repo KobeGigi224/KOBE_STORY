@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "科比与中国",
+
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas",
+    "van-notice-bar": "../../miniprogram_npm/vant-weapp/notice-bar/index"
+  }
+}

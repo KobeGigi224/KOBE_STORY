@@ -1,0 +1,10 @@
+<!--pages/placedetail/placedetail.wxml-->
+<van-divider contentPosition="center">我寻找的圣地</van-divider>
+<view wx:for="{{place}}" class="queryplace" data-cid='{{item._id}}' data-oid='{{item._openid}}'>
+  <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" async-close bind:close="onClose">
+    <van-cell-group>
+      <van-card desc="{{item.address}}" title="{{item.area}}-{{item.placename}}" thumb="{{item.image}}" />
+    </van-cell-group>
+    <view slot="right" bindtap='deleteplace' data-cid='{{item._id}}' data-oid='{{item._openid}}' data-image="{{item.image}}">删除</view>
+  </van-swipe-cell>
+</view>

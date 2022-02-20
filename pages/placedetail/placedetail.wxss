@@ -1,0 +1,16 @@
+/* pages/placedetail/placedetail.wxss */
+.van-swipe-cell__right {
+  display: inline-block;
+  width: 65px;
+  height: 65px;
+  font-size: 15px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  background-color: #f44;
+}
+
+.queryplace {
+ margin-top:10px;
+ margin-bottom:10px;
+}

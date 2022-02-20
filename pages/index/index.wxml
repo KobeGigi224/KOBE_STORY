@@ -1,0 +1,143 @@
+<!--pages/index/index.wxml-->
+<van-notice-bar 
+scrollable
+loop
+color="#7232DD"
+background="#ecf9ff"
+left-icon="like" 
+text="{{kobesays}}"/>
+
+<view wx:if="{{ishidelogin}}" style="margin-top:10px">
+<van-button color="#32CD32" open-type="getUserProfile" lang="zh_CN" bindtap="bindGetUserInfo" type="primary" block><view style="color:#FFFFFF;font-weight:bold">授权登录</view></van-button>
+</view>
+
+<view class="login" wx:if="{{ishidemes}}" bindtap="gotousercenter">
+<image style="width: 60px; height: 60px; border-radius:50%; margin-left:10px;margin-top:10px;background-color: #eeeeee;" mode="scaleToFill" src="{{image}}">
+</image>
+<view style="position:absolute;left:100px;top:77px">
+<text>{{username}}</text>
+</view>
+
+</view>
+
+<view style="margin:10px 10px 0px 10px; height: 150rpx;background-color: #C0C0C0;color: #FFFFFF;border-radius: 10rpx;">
+  <van-row style="font-size: 32rpx;font-weight: bold;">
+  <van-col span="8" style="text-align: center;"><view style="margin-top: 10rpx;">昨日活跃科密</view></van-col>
+  <van-col span="8" style="text-align: center;"><view style="margin-top: 10rpx;">昨日新增科密</view></van-col>
+  <van-col span="8" style="text-align: center;"><view style="margin-top: 10rpx;">昨日访问次数</view></van-col>
+</van-row>
+<van-row   style="font-size: 60rpx;">
+  <van-col span="8" style="text-align: center;">{{active}}</van-col>
+  <van-col span="8" style="text-align: center;">{{newadd}}</van-col>
+  <van-col span="8" style="text-align: center;">{{visitcount}}</van-col>
+</van-row>
+</view>
+
+<view style="margin-top:10px;">
+<van-row type="flex" justify="center" >
+<van-col span="12" style="height:30px">
+<van-button color="#FFFF00" cilck="showPopup"  type="primary" block bindtap="gomeschart"><view style="color:#7232DD;font-weight:bold">科密留言： {{mescount}}条</view></van-button>
+</van-col>
+<van-col span="12">
+<van-button color="#7232DD" cilck="showPopup" type="primary" block bindtap="goplacechart"><view style="color:#FFFF00;font-weight:bold">科密圣地： {{placecount}}处</view></van-button>
+</van-col>
+</van-row>
+</view>
+
+
+<view style="margin-top:10px">
+<van-grid clickable column-num="3" >
+  <van-grid-item
+    icon="chart-trending-o"
+    link-type="navigateTo"
+    url="/pages/career/career"
+    text="科比生涯"
+  />
+    <van-grid-item
+    icon="cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/guoqi.png"
+    link-type="navigateTo"
+    url="/pages/map/map"
+    text="科密地图"
+  />
+  <van-grid-item
+    icon="todo-list-o"
+    bindtap="gongzhonghao"
+    text="更新日志"
+  />
+</van-grid>
+<van-grid clickable column-num="3" >
+    <van-grid-item
+    icon="chat-o"
+    text="上传留言"
+    bindtap="gotocomment"
+  />
+  <van-grid-item
+    icon="location-o"
+    text="上传圣地"
+    bindtap="gotoplace"
+  />
+  <van-grid-item
+    icon="photo-o"
+    text="上传图片"
+    bindtap="gotophoto"
+  />
+</van-grid>
+</view>
+
+
+
+<view wx:for="{{index}}" style="margin-top:10px">
+<van-card
+  wx:if="{{item.seq=='1'}}"
+  desc="{{item.description}}"
+  title="{{item.constant}}{{timehall}}"
+  thumb="{{item.image}}"
+  data-src="{{item.image}}"
+  bindtap="big"
+/>
+
+</view>
+
+<view wx:for="{{index}}" style="margin-top:10px">
+<van-card
+  wx:if="{{item.seq=='0'}}"
+  desc="{{item.description}}"
+  title="{{item.constant}}{{timebirth}}"
+  thumb="{{item.image}}"
+  data-src="{{item.image}}"
+  bindtap="big"
+/>
+</view>
+
+<view style="margin-top:10px">
+<van-card
+  desc="北京时间2016年4月14日，科比迎来职业生涯最后一战主场作战爵士，狂砍60分上演完美告别战"
+  title="科比退役已经{{timeRetire}}"
+  thumb="cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/Kobe_Retire.jpg"
+  data-src="cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/Kobe_Retire.jpg"
+  bindtap="big"
+/>
+</view>
+
+<view style="margin-top:10px">
+<van-card
+  desc="北京时间2020年1月27日，科比宣布复出单挑上帝"
+  title="科比单挑上帝已经{{timeDied}}"
+  thumb="cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/Kobe_Died.jpg"
+  data-src="cloud://blackmisskobe-wb71j.626c-blackmisskobe-wb71j-1303932135/images/Kobe_Died.jpg"
+  bindtap="big"
+/>
+</view>
+
+<van-divider contentPosition="center" style="margin-top:20px">Black&Emma</van-divider>
+<view class="bottom">
+<official-account></official-account>
+</view>
+
+
+
+
+
+
+
+

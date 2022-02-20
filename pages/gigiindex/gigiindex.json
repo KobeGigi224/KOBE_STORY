@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "图片",
+  "usingComponents": {
+    "van-notice-bar": "../../miniprogram_npm/vant-weapp/notice-bar/index",
+    "van-col": "../../miniprogram_npm/vant-weapp/col/index",
+    "van-row": "../../miniprogram_npm/vant-weapp/row/index",
+    "van-card": "../../miniprogram_npm/vant-weapp/card/index",
+    "van-grid": "../../miniprogram_npm/vant-weapp/grid/index",
+    "van-grid-item": "../../miniprogram_npm/vant-weapp/grid-item/index",
+    "van-tabs": "../../miniprogram_npm/vant-weapp/tabs/index",
+    "van-tab": "../../miniprogram_npm/vant-weapp/tab/index",
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

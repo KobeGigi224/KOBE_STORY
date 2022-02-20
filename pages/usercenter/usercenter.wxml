@@ -1,0 +1,16 @@
+<!--pages/usercenter/usercenter.wxml-->
+<view class="wrapper">
+    <!-- 个人资料 -->
+    <view class="profile">
+      <view class="meta">
+        <open-data class="avatar" type="userAvatarUrl"></open-data>
+        <open-data class="nickname" type="userNickName"></open-data>
+      </view>
+    </view>
+    <van-cell-group >
+     <van-cell title="我的留言" is-link bindtap="gotomesdetail" />
+     <van-cell title="我寻找的圣地" is-link bindtap="gotoplacedetail" />
+     <van-cell title="我上传的图片" is-link bindtap="gotophotodetail" />
+     <van-cell title="我的建议" is-link bindtap="gotoadvice" />
+    </van-cell-group>
+  </view>

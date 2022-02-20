@@ -1,0 +1,37 @@
+<view class="page-body">
+<view class="page">
+<view class="weui-cells__title">图片上传</view>
+    <view class="page__bd">
+        <mp-cells>
+            <mp-cell>
+                <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" binddelete="uploaddelete" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="1" title="请选择图片"></mp-uploader>
+            </mp-cell>
+        </mp-cells>
+        <view class="hidefileid">
+          <input class="weui-input" disabled="true"   bindinput="bindfileid" placeholder="输入同步到view中" value="{{imageurltocloud}}"/>
+        </view>
+    </view>
+</view>
+    <view class="page-section">
+    <view class="weui-cells__title">建议</view>
+          <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+      <textarea style="height: 5em" class="weui-input" maxlength="-1"  bindinput="bindKeyadvice" placeholder="请填写你对这个小程序改进的建议" />
+      </view>
+</view>
+  </view>
+
+  <view class="page-section" style="top:-10px">
+  <view class="weui-cells__title">微信号(选填)</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+              <textarea style="height: 1em" class="weui-input" maxlength="-1"  bindinput="bindKeywxh" placeholder="希望和您一起传递曼巴精神" />
+      </view>
+    </view>
+  </view>
+</view>
+  <div style="margin: 16px;">
+    <van-button round block type="info" native-type="submit" bindtap="advicecomfirm" >
+      提交
+    </van-button>
+  </div>

@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "我上传的图片",
+  "usingComponents": {
+    "van-swipe-cell": "../../miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-cell-group": "../../miniprogram_npm/vant-weapp/cell-group/index",
+    "van-cell": "../../miniprogram_npm/vant-weapp/cell/index",
+    "van-card": "../../miniprogram_npm/vant-weapp/card/index",
+    "van-tabs": "../../miniprogram_npm/vant-weapp/tabs/index",
+    "van-tab": "../../miniprogram_npm/vant-weapp/tab/index",
+    "van-divider": "../../miniprogram_npm/vant-weapp/divider/index"
+  }
+}

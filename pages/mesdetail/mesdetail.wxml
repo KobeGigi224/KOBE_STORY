@@ -1,0 +1,10 @@
+<!--pages/mesdetail/mesdetail.wxml-->
+<van-divider contentPosition="center">我的留言</van-divider>
+<view wx:for="{{mes}}" class="querychina" data-cid='{{item._id}}' data-oid='{{item._openid}}'>
+  <van-swipe-cell id="swipe-cell" right-width="{{ 65 }}" async-close bind:close="onClose">
+    <van-cell-group>
+      <van-card desc="{{item.comment}}" title="{{item.area}}-{{item.nikename}}" />
+    </van-cell-group>
+    <view slot="right" bindtap='deletemes' data-cid='{{item._id}}' data-oid='{{item._openid}}'>删除</view>
+  </van-swipe-cell>
+</view>

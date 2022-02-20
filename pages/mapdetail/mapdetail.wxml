@@ -1,0 +1,38 @@
+<!--pages/mapdetail/mapdetail.wxml-->
+<view class="chooseArea">当前选择区域：{{area}}</view>
+
+<van-tabs type="card" color="#000000">
+<van-tab title="留言墙({{mcount}})">
+   <view wx:for="{{mes}}" class="querychina">
+<van-card
+  num="{{item.updatetime}}"
+  desc="{{item.comment}}"
+  title="{{item.area}}-{{item.nikename}}"
+/>
+</view> 
+</van-tab>
+  <van-tab title="圣地({{pcount}})">
+     <view wx:for="{{place}}" class="querychina">
+<van-card
+  desc="{{item.address}}"
+  title="{{item.area}}-{{item.placename}}"
+  thumb="{{item.image}}"
+  data-src="{{item.image}}"
+  bindtap="big"
+/>
+</view> 
+  </van-tab>
+    <van-tab title="足迹({{ccount}})">
+  <view wx:for="{{china}}" class="querychina">
+<van-card
+  desc="{{item.description}}"
+  title="{{item.city}}"
+/>
+</view>
+</van-tab>
+</van-tabs>
+
+
+
+
+  

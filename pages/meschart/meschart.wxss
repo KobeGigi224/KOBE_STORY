@@ -1,0 +1,17 @@
+/**index.wxss**/
+.container{
+position: absolute;
+top: -150rpx;
+left: 0;
+right: 0;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+box-sizing: border-box;
+}
+ec-canvas {
+  width: 100%;
+  height:2400rpx;
+}

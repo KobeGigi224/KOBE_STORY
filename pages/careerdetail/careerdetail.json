@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "生涯数据",
+
+  "usingComponents": {
+  "van-grid": "../../miniprogram_npm/vant-weapp/grid/index",
+  "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+  "van-grid-item": "../../miniprogram_npm/vant-weapp/grid-item/index",
+  "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

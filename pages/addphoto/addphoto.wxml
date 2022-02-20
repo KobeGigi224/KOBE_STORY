@@ -1,0 +1,49 @@
+<view class="page-body">
+  <view class="page-section">
+  <view class="weui-cells__title">昵称</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input"  maxlength="10" bindinput="bindKeyName" placeholder="输入同步到view中" disabled="true" value="{{nikename}}"/>
+      </view>
+    </view>
+  </view>
+<view class="page-section">
+  <view class="weui-cells__title">图片主题</view>
+  <picker mode="selector" bindchange="bindphotoPickerChange" value="{{indextype}}" range="{{arraytype}}">
+      <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+    <view class="picker weui-input">
+          {{arraytype[indextype]}}
+    </view>
+    </view>
+    </view>
+  </picker>
+</view>
+
+<view class="page">
+<view class="weui-cells__title">图片上传</view>
+    <view class="page__bd">
+        <mp-cells>
+            <mp-cell>
+                <mp-uploader bindfail="uploadError" bindsuccess="uploadSuccess" binddelete="uploaddelete" select="{{selectFile}}" upload="{{uplaodFile}}" files="{{files}}" max-count="1" title="请选择图片（可在我上传的图片中查看图片是否上传成功）"></mp-uploader>
+            </mp-cell>
+        </mp-cells>
+        <view class="hidefileid">
+          <input class="weui-input" disabled="true"   bindinput="bindfileid" placeholder="输入同步到view中" value="{{imageurltocloud}}"/>
+        </view>
+    </view>
+</view>
+    <view class="page-section" style="top:-10px">
+    <view class="weui-cells__title">图片描述</view>
+          <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+      <textarea style="height: 5em" class="weui-input" maxlength="42"  bindinput="bindKeydesc" placeholder="请描述该图片，可以写下背后的故事（文本限制40字符！输入纯数字或者纯英文一定要用空格分隔！）" />
+      </view>
+</view>
+  </view>
+</view>
+  <div style="margin: 16px;">
+    <van-button round block type="info" native-type="submit" bindtap="photocomfirm" >
+      提交
+    </van-button>
+  </div>

@@ -1,0 +1,13 @@
+/* pages/mapdetail/mapdetail.wxss */
+.chooseArea {
+ margin-left:15px;
+ margin-top:10px;
+ margin-bottom:10px;
+ font-size: 12px;
+ color: gray;
+}
+
+.querychina {
+ margin-top:10px;
+ margin-bottom:10px;
+}
