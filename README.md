@@ -1,4 +1,5 @@
 # KOBE_STORY
+我独立开发的微信小程序，仅此致敬我的英雄-科比布莱恩特，感谢你陪伴我的青春并不断激励我</br>
 I made a wechat mini program </br>
 This is for Kobe&Gigi
 
